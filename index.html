@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calculator.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <header>
+    <h1 class="header">Calculator</h1>
+  </header>
+
+  <main>
+    <div class="calculator-container">
+      <div class="input-section">
+        <input type="number" id="firstNumber" placeholder="Enter first number">
+        <select id="operator">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">x</option>
+          <option value="/">/</option>
+          <option value="**">^</option>
+          <option value="%">%</option>
+        </select>
+        <input type="number" id="secondNumber" placeholder="Enter second number">
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+
+      <div class="result-section">
+        <h2>Result:</h2>
+        <div id="result"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div id="quote-container"></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
